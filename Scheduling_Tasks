@@ -1,0 +1,19 @@
+-Cron is a daemon that triggers jobs on a regular basis.
+
+-At is user for tasks that need to be started once.
+
+-Systemd Timers provide a new alternative to cron.
+
+-Generic time-specific cron jobs in /etc/cron.d
+
+-Scripts, xeuted on an hourly, daily, weekly, monthly basis are stored in /etc/cron.d
+
+-Anacron is a service behind cron that takes care of jobs and make sure they are executed on a regular basis, but not a specific time.
+
+
+Commands:
+ 
+	crontab -e = user specific cron jobs
+	at "date" = adds a task that need to be started once
+	atq = checks for current task
+	atrm = removes tasks
